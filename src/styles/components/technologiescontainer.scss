@@ -14,7 +14,7 @@
 
 
         .technology-card{
-            @include mixins.center;
+            flex-direction: column;
             gap: 1rem;
             padding: 1rem;
             border: 1px solid #333;
@@ -23,12 +23,15 @@
 
 
             h3{
+                @include mixins.center;
+                gap: 1rem;
                 color: variables.$text-color;
                 margin-bottom: 1rem;
             }
 
             svg{
-                font-size: 6rem;
+                font-size: 3rem;
+                
             }
         }
 

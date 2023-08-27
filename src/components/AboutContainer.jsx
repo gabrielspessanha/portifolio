@@ -5,9 +5,11 @@ export function AboutContainer(){
     return (
         <section className="about-container">
             <h2>Sobre</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, aliquid. Dolore voluptate, alias at, velit excepturi id aspernatur magnam aliquam adipisci tempora dolores delectus numquam illum, eius totam. Nulla, veritatis.</p>
+            <p>Olá! Me chamo Gabriel e tenho 20 anos. Meu objetivo profissional atualmente é conseguir um estágio na área de desenvolvimento de software. Atualmente, faço Análise e Desenvolvimento de Sistemas, com conclusão prevista para 01/2025. Também estou fazendo cursos profissionalizantes, como o Full-Stack da Onebitcode e o full-stack-python da EBAC.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla a laboriosam esse aut? Dolor vitae fugiat cupiditate cum distinctio? Laboriosam eum, hic animi ex impedit itaque eos debitis repellendus rerum.</p>
+            <p>Possuo conhecimentos em linguagens como Javascript, HTML5, CSS3 e também tenho conhecimentos em frameworks como Bootstrap e Sass. Atualmente, estou estudando React e Typescript.</p>
+
+            <p>Acredito que a evolução contínua é fundamental nesse campo. Assim, estou comprometido a seguir estudando e explorando novas maneiras de aprimorar minhas habilidades.</p>
         </section>
     )
 }

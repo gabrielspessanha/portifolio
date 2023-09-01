@@ -1,24 +1,19 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from "react-bootstrap/Nav";
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import logo from '../img/logo.png'
+
+import './styles.scss';
+
+
 
 export function Header(){
     return( 
       <>
-        <Navbar bg="light"  expand="lg" className="container  mb-3">
+        <Navbar bg="transparent"  expand="lg" className={`header container`}>
           <Container fluid>
           <Navbar.Brand href="#home">
-            <img
-              alt="logo"
-              src={logo}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />
+            <p>Gabriel Pessanha</p>
           </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
             <Navbar.Offcanvas
@@ -36,6 +31,7 @@ export function Header(){
                   <Nav.Link href="#action1">Home</Nav.Link>
                   <Nav.Link href="#action2">Sobre</Nav.Link>
                   <Nav.Link href="#action1">Portfolio</Nav.Link>
+                  <Nav.Link href="#action1">Contato</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

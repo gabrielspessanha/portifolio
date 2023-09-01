@@ -1,3 +1,4 @@
+@import './variables.scss';
 
 *{
     padding: 0;
@@ -7,7 +8,9 @@
 
 
 body{
-
+    background: $body-bg-color;
+    color: $text-color;
+    
     a, svg{
         transition: .4s;
     }

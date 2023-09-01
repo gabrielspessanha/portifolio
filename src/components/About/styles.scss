@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+.containerAbout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    min-height: 80vh;
+
+
+    .img-card{
+        max-height: 320px;
+        max-width: 320px;
+        border-radius: 20px;
+        background-color: grey;
+
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    .about-text{
+        max-width: 440px;
+        min-height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        
+
+        button{
+            padding: .3rem 2rem;
+            border-radius: 20px;
+            max-width: 10rem;
+            background: $gradient;
+            color: #fff;
+            border: none;
+        }
+        
+    }
+    
+    
+}

@@ -10,7 +10,7 @@ import './styles.scss';
 export function Header(){
     return( 
       <>
-        <Navbar bg="transparent"  expand="lg" className={`header container`}>
+        <Navbar bg="transparent" data-bs-theme="dark"  expand="false" className={`header container`}>
           <Container>
           <Navbar.Brand href="#home">
             <h3>Gabriel Pessanha</h3>
@@ -22,11 +22,11 @@ export function Header(){
               placement="end"
               className='sidebar'
             >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
-                  Gabriel Santos pessanha
-                </Offcanvas.Title>
-              </Offcanvas.Header>
+                <Offcanvas.Header closeButton>
+                  <Offcanvas.Title className='sideTitle' id={`offcanvasNavbarLabel-expand-lg`}>
+                    Gabriel
+                  </Offcanvas.Title>
+                </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 navLinks">
                     <Nav.Link href="#action1">Home</Nav.Link>
@@ -38,6 +38,8 @@ export function Header(){
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-    </>
+        
+
+      </>
     )
 }

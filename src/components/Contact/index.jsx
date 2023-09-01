@@ -1,10 +1,9 @@
 
 import {AiFillPhone, AiOutlineMail, AiFillEnvironment } from "react-icons/ai"
 
-import "../styles/components/informationcontainer.scss";
 
 
-export function InformationContainer(){
+export function Contact(){
     return(
        <section id="information">
             <div className="info-card">
@@ -30,6 +29,7 @@ export function InformationContainer(){
                     <p>Rio de Janeiro / RJ</p>
                 </div>
             </div>
+            
 
         </section>
     )

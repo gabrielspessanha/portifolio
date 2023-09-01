@@ -33,6 +33,7 @@ export function Header(){
                     <Nav.Link href="#action2">Sobre</Nav.Link>
                     <Nav.Link href="#action1">Portfolio</Nav.Link>
                     <Nav.Link href="#action1">Contato</Nav.Link>
+                    <Nav.Link href="#action1">Technologias</Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
             </Navbar.Offcanvas>

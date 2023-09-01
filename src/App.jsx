@@ -13,7 +13,7 @@ function App() {
   return (
    <div id="portifolio">
     <Header />
-    <Technologies />
+    <Contact />
    </div>
   )
 }

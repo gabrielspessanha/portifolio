@@ -3,6 +3,7 @@ import {AiFillPhone, AiOutlineMail, AiFillEnvironment } from "react-icons/ai"
 
 import './styles.scss';
 
+
 export function Contact(){
     return(
        <section className="container" id="information">
@@ -29,7 +30,6 @@ export function Contact(){
 
             </div>
             
-
         </section>
     )
 }

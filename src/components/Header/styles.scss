@@ -20,8 +20,24 @@
     background-color: $bg-color-secondary;
     color: $text-color;
 
-    .navLinks> *, .sideTitle{
-        width: 100%;
+    .sideTitle{
+        display: flex;
+        gap: 2rem;
+
+        svg{
+            border-radius: 5px;
+            width: 5rem;
+            height: 5rem;
+            padding: 1rem;
+            
+            &:hover{
+                background: $gradient;
+                color: white;
+            }
+        }
+    }
+
+    .navLinks> *{
         border-radius:20px;
         padding-left: 1rem;
         
@@ -43,4 +59,17 @@
         background-color: #FFF;
         border-radius: 20px;
     }
-}
+    .linkedin{
+        color: #0072B1;
+    }
+        
+    .github{
+        color: #111;
+    }
+        
+    .instagram{
+        color: #bc2a8d;
+    }
+
+
+ }

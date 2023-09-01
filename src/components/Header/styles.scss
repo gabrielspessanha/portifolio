@@ -1,9 +1,16 @@
 @import '../../styles/variables.scss';
 
 .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     
-    p{
-        
+    
+    h3{  
+        font-size: 2rem;
+        background:$gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     button{
@@ -11,3 +18,13 @@
     }
 }
 
+.sidebar{
+    background-color: $bg-color-secondary;
+    color: $text-color;
+    
+    .navLinks{
+        background:$gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

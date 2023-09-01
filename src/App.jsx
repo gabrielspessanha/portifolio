@@ -1,7 +1,5 @@
-import { MainContent } from "./components/MainContent";
-import { Sidebar } from "./components/Sidebar";
+import { Header } from "./components/Header";
 
-import "./styles/components/app.scss";
 
 
 
@@ -9,9 +7,8 @@ function App() {
 
   return (
    <div id="portifolio">
+    <Header />
     <h1>Gabriel pessanha</h1>
-    <Sidebar />
-    <MainContent />
    </div>
   )
 }

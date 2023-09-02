@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from "react-bootstrap/Nav";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {FaLinkedinIn, FaGithub, FaInstagram} from 'react-icons/fa'
-
+import { Link } from 'react-router-dom'
 import './styles.scss';
 
 const socialNetworks =[
@@ -46,11 +46,11 @@ export function Header(){
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 navLinks">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#about">Sobre</Nav.Link>
-                    <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-                    <Nav.Link href="#contato">Contato</Nav.Link>
-                    <Nav.Link href="#technologies">Technologias</Nav.Link>
+                    <Nav.Link><Link to="/">Home</Link></Nav.Link>
+                    <Nav.Link><Link to="/about">Sobre</Link></Nav.Link>
+                    <Nav.Link><Link to="/portfolio">Portfolio</Link></Nav.Link>
+                    <Nav.Link><Link to="/contact">Contato</Link></Nav.Link>
+                    <Nav.Link><Link to="/technologies">Technologias</Link></Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
             </Navbar.Offcanvas>

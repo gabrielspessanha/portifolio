@@ -3,7 +3,7 @@ import { Header } from "../../components/Header";
 
 
 
-export function HomePage(){
+export function AboutPage(){
     return(
         <div id="container">
             <Header />

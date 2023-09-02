@@ -3,7 +3,7 @@ import { Portfolio } from "../../components/Portfolio";
 
 
 
-export function HomePage(){
+export function PortfolioPage(){
     return(
         <div id="container">
             <Header />

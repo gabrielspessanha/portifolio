@@ -23,7 +23,7 @@ export function Header(){
         <Navbar bg="transparent" data-bs-theme="dark"  expand="false" className={`header container`}>
           <Container>
           <Navbar.Brand href="#home">
-            <h3>Gabriel Pessanha</h3>
+            <h3>PORTFOLIO</h3>
           </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
             <Navbar.Offcanvas

@@ -85,3 +85,16 @@
 
 
  }
+
+ @media (max-width: 450px){
+    .header{
+        h3{
+            font-size: 1.3rem;
+        }
+
+        button{
+            font-size: 1rem;
+        }
+    }
+    
+ }

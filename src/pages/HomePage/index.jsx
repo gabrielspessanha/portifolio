@@ -8,7 +8,7 @@ export function HomePage(){
             <Header />
             <div className="container main-Content">
                 <h1>GABRIEL SANTOS PESSANHA</h1>
-                <p>DESENVOLVEDOR FRONT-END</p>
+                <p>DESENVOLVEDOR <span>FRONT-END</span></p>
             </div>
         </div>
     )

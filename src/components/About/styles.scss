@@ -1,17 +1,24 @@
 @import '../../styles/variables.scss';
 .containerAbout{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
     min-height: 80vh;
+    margin: 2rem 0;
+    
+
+    &>*{
+        display: grid;
+    }
 
 
     .img-card{
-        max-height: 320px;
-        max-width: 320px;
+        max-height: 500px;
+        max-width: 500px;
         border-radius: 20px;
-        background-color: grey;
+        align-self: center;
 
         img{
             width: 100%;
@@ -24,10 +31,14 @@
         background:$gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        span{
+            display: inline-block;
+        }
     }
 
     .about-text{
-        max-width: 440px;
+        max-width: 500px;
         min-height: 320px;
         display: flex;
         flex-direction: column;
@@ -37,7 +48,7 @@
         button{
             padding: .3rem 2rem;
             border-radius: 20px;
-            max-width: 10rem;
+            max-width: 12rem;
             background: $gradient;
             color: #fff;
             border: none;
@@ -51,4 +62,39 @@
     }
     
     
+}
+
+@media(max-width: 770px){
+
+    .containerAbout{
+        grid-template-columns: 1fr;
+
+        .title-about{
+            font-size: 1.7rem;
+        }
+        .about-text{
+            font-size: 1.3rem;
+        }
+
+    }
+
+   
+}
+
+
+@media(max-width: 400px){
+
+    .containerAbout{
+        grid-template-columns: 1fr;
+
+        .title-about{
+            font-size: 1.4rem;
+        }
+        .about-text{
+            font-size: 1rem;
+        }
+
+    }
+
+   
 }

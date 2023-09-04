@@ -35,12 +35,11 @@ export function Header(){
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title className='sideTitle' id={`offcanvasNavbarLabel-expand-lg`}>
                   {socialNetworks.map((network)=> (
-                    <div >
-                        <a href={network.link} target="__blank" className={network.name} key={network.name}>
+                    <div key={network.name}>
+                        <a href={network.link} target="__blank" className={network.name}>
                         {network.icon}
                         </a>
                     </div>
-
                     ))}
                   </Offcanvas.Title>
                 </Offcanvas.Header>

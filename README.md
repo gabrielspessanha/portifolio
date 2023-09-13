@@ -1,4 +1,4 @@
-# React + Vite
+# Este é meu portfolio pessoal onde irei guardar meus projetos e informações relevantes
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

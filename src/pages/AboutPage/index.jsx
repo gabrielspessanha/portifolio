@@ -5,7 +5,7 @@ import { Header } from "../../components/Header";
 
 export function AboutPage(){
     return(
-        <div id="container">
+        <div className="container">
             <Header />
             <About />
         </div>

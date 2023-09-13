@@ -21,7 +21,7 @@ const infocards = [
         description: "Este projeto é um marketplace de NFT que permite aos usuários explorar uma coleção exclusiva de ativos digitais únicos. Desenvolvido com as tecnologias React, JavaScript, HTML5, CSS3, Bootstrap e Sass, o marketplace oferece uma plataforma para a comunidade de criptoarte.", 
         technologies: [<DiReact color='#61dafb' size={40} />, <DiJsBadge color='#f0db4f' size={40} />, <DiHtml5 color='#E44D26' size={40} />, <DiCss3 color='#1572b6' size={40} />], 
         linkGit: "https://github.com/gabrielspessanha/NFT-Marketplace.git", 
-        linkDeploy: "https://darling-seahorse-ba4215.netlify.app/", 
+        linkDeploy: "https://nftmarketplacewebsite.netlify.app/", 
         img: marketplace
     },
     {

@@ -3,6 +3,7 @@ import './styles.scss'
 
 
 export function About(){
+
     return(
         <div className="container containerAbout" id="about">
             <div className='img-card'>

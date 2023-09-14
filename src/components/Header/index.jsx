@@ -5,6 +5,9 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import {FaLinkedinIn, FaGithub, FaInstagram} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import './styles.scss';
+import { useContext } from 'react';
+import UserContext from '../../contexts/UserContext';
+import React, { useEffect, useState } from 'react';
 
 const socialNetworks =[
 
@@ -16,14 +19,35 @@ const socialNetworks =[
   
 ]
 
+function AnimatedText() {
+  const [visibleWordIndex, setVisibleWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisibleWordIndex((prevIndex) => (prevIndex === words.length - 1 ? 0 : prevIndex + 1));
+    }, 2500);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+}
 
 export function Header(){
+
+    const user = useContext(UserContext)
     return( 
       <>
         <Navbar bg="transparent" data-bs-theme="dark"  expand="false" className={`header container`}>
           <Container>
-          <Navbar.Brand href="#home">
-            <h3>PORTFOLIO</h3>
+          <Navbar.Brand className='title-header cd-intro' href="#home">
+            <h1 className='cd-headline rotate-1'>
+              <span className='cd-words-wrapper'>
+                <b className='is-visible'>Olá</b>
+                <b>bem vindo{'(a)'}</b>
+              </span>
+            </h1>
+            <h3>{user.name}</h3> 
           </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
             <Navbar.Offcanvas

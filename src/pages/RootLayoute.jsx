@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom"
 import { Header } from "../components/Header"
+import { Footer } from "../components/Footer"
 
 export default function RootLayoute() {
     return(
@@ -8,9 +9,7 @@ export default function RootLayoute() {
             <main>
                 <Outlet />
             </main>
-            <footer>
-                Criado por Gabriel
-            </footer>
+            <Footer />
         </>
         
     )

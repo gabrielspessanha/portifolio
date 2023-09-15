@@ -9,7 +9,6 @@ export function AboutPage(){
 
     return(
         <div className="container">
-            <Header />
             <About />
             
         </div>

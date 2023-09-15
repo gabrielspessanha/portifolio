@@ -69,11 +69,11 @@ export function Header(){
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 navLinks">
-                    <Nav.Link><Link to="/">Home</Link></Nav.Link>
-                    <Nav.Link><Link to="/about">Sobre</Link></Nav.Link>
-                    <Nav.Link><Link to="/portfolio">Portfolio</Link></Nav.Link>
-                    <Nav.Link><Link to="/contact">Contato</Link></Nav.Link>
-                    <Nav.Link><Link to="/technologies">Technologias</Link></Nav.Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">Sobre</Link>
+                    <Link to="/portfolio">Portfolio</Link>
+                    <Link to="/contact">Contato</Link>
+                    <Link to="/technologies">Technologias</Link>
                   </Nav>
                 </Offcanvas.Body>
             </Navbar.Offcanvas>

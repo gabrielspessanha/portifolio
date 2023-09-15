@@ -9,7 +9,7 @@ import { useContext } from 'react';
 import UserContext from '../../contexts/UserContext';
 import React, { useEffect, useState } from 'react';
 
-const socialNetworks =[
+export const socialNetworks =[
 
   { name: "linkedin", icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/gabrielsantospessanha/"},
   
@@ -38,9 +38,9 @@ export function Header(){
     const user = useContext(UserContext)
     return( 
       <>
-        <Navbar bg="transparent" data-bs-theme="dark"  expand="false" className={`header container`}>
+        <Navbar bg="transparent" data-bs-theme="dark"  expand="lg" className={`header container`}>
           <Container>
-          <Navbar.Brand className='title-header cd-intro' href="/home">
+          <Navbar.Brand className='title-header cd-intro'>
             <h1 className='cd-headline rotate-1'>
               <span className='cd-words-wrapper'>
                 <b className='is-visible'>Olá</b>

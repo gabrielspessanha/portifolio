@@ -29,6 +29,36 @@
             -webkit-text-fill-color: transparent;
         }
     }
+
+    .networks{
+        display: flex;
+        justify-content: center;
+
+        svg{
+            border-radius: 5px;
+            margin: 0;
+            width: 3.5rem;
+            height: 3.5rem;
+            padding: .5rem;
+            
+            &:hover{
+                background: $gradient;
+                color: white;
+            }
+        }
+        .linkedin{
+            color: #0072B1;
+        }
+            
+        .github{
+            color: #111;
+        }
+            
+        .instagram{
+            color: #bc2a8d;
+        }
+
+    }
 }
 
 @media (max-width: 1000px){

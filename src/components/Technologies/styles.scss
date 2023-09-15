@@ -59,4 +59,17 @@
 
         
     }
+
+
+    @media(max-width: 550px){
+        .technologies-grid{
+            flex-direction: column;
+            align-items: center;
+
+            .technology-card{
+                width: 100%;
+                font-size: 1.2rem;
+            }
+        }
+    }
 }

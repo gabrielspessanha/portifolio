@@ -38,7 +38,7 @@ export function Portfolio(){
     return(
         <div className="container">
             <header>
-                <h1>PORTFOLIOS</h1>
+                <h2>PORTFOLIOS</h2>
                 <hr />
             </header>
 

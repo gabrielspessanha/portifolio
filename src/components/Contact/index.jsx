@@ -7,7 +7,7 @@ import './styles.scss';
 export function Contact(){
     return(
        <section className="container" id="information">
-            <h1>CONTATO</h1>
+            <h2>CONTATO</h2>
             <hr />
 
             <div className="info-card">

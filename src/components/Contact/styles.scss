@@ -6,13 +6,6 @@
     justify-content: center;
     height: 80vh;
 
-    h1{
-        font-size: 1.5rem;
-        font-weight: 800;
-        background:$gradient;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 
     .info-card{
         display: flex;
@@ -68,9 +61,7 @@
         .info-card{
            span{
             font-size: .8rem;
-        }
-
-        }
+        }}
     }
     
 }

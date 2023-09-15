@@ -47,6 +47,31 @@
     .pin-icon{
         color: rgb(113, 248, 2);
     }
+    @media(max-width: 530px){
+        .info-card{
+           max-width: 500px;
+           padding: .3rem .3rem;
+           gap: .3rem;
 
+           h5{
+              font-size: .9rem;
+            }
+
+           span{
+            font-size: 1rem;
+        }
+
+        }
+    }
+
+    @media(max-width: 340px){
+        .info-card{
+           span{
+            font-size: .8rem;
+        }
+
+        }
+    }
     
 }
+

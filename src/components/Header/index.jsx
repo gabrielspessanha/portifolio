@@ -40,7 +40,7 @@ export function Header(){
       <>
         <Navbar bg="transparent" data-bs-theme="dark"  expand="false" className={`header container`}>
           <Container>
-          <Navbar.Brand className='title-header cd-intro' href="#home">
+          <Navbar.Brand className='title-header cd-intro' href="/home">
             <h1 className='cd-headline rotate-1'>
               <span className='cd-words-wrapper'>
                 <b className='is-visible'>Olá</b>

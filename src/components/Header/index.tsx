@@ -3,7 +3,6 @@ import Link from 'next/link';
 import {Container, Navbar, NavbarBrand} 
 
 from 'reactstrap';
-import styles from './styles.module.scss'
 
 export const socialNetworks =[
   { 
@@ -17,6 +16,7 @@ export const socialNetworks =[
         from-orange 
         to-pink p-1
         transition-all
+        rounded-lg
         " 
       />, 
     link: "https://www.linkedin.com/in/gabrielsantospessanha/"
@@ -26,13 +26,14 @@ export const socialNetworks =[
     icon: <FaGithub size={35} 
       className="
         text-white 
-        hover:text-github 
         hover:bg-none 
+        hover:text-github
         bg-gradient-to-r  
         from-orange to-pink 
         p-1
         transition-all
         duration-300
+        rounded-lg
         " 
       />, 
     link: "https://github.com/gabrielspessanha"
@@ -48,6 +49,7 @@ export const socialNetworks =[
         from-orange to-pink 
         p-1
         transition-all
+        rounded-lg
         " 
       />, 
     link: "https://www.instagram.com/bieldinn/" },

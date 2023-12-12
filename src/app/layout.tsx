@@ -29,7 +29,6 @@ export default function RootLayout({
       <body  className={`${inter.className} backgroundBody`}>
         <Header />
         {children}
-        <Footer />
       </body>
     </html>
   )

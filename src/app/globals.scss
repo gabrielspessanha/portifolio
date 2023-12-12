@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+  --white: #FFFFFF;
+
+  --font-stack: Helvetica;
+
+  --text-color: #FFF;
+  --text-color-secondary: #a6a6a6;
+
+  --body-bg-color: #282530;
+  --bg-color: #111111b3;
+  --bg-color-secondary: #1d1d1d;
+  --gradient: linear-gradient(90deg, rgba(250,82,82,1) 0%, rgba(221,36,118,1)100% );
+}
+
+.backgroundBody{
+  background: var(--body-bg-color);
+  color: var(--text-color);
+
+  a{
+    text-decoration: none;
+    color: inherit;
+    color: var(--text-color);
+  }
+}
+
+
+body, input, textarea, select, button{
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+button{
+  cursor: pointer;
+}
+
+.text-gradient{  
+  font-size: 2rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+
+@media(max-width: 1080px){
+  html{
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 720px){
+  html{
+    font-size: 87.5%;
+  }
+}

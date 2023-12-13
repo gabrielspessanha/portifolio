@@ -1,0 +1,83 @@
+
+
+.cardLayout{
+  transition: .3s;
+  background-color: #e10d0d;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.771);
+  background: linear-gradient(
+    to right bottom,
+    rgba(245, 100, 27, 0.335),
+    rgba(255, 24, 182, 0.261)
+  );
+
+  &:hover{
+    transform: scale(1.02);
+  }
+}
+
+.closeBtn{
+  position: absolute;
+  color: #fe006e;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  transition: transform .3s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.imgModal{
+  position: absolute;
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 2rem;
+}
+
+.contentModal{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.modal{
+  position: relative;
+  width: 90%;
+  max-width: 70rem;
+  height: 40rem;
+  top: 10rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.771);
+  outline: none;
+  border-radius: 2rem;
+  box-shadow: 8px 6px 4px rgba(0, 0, 0, 0.229);
+  padding: 0 24px;
+
+
+  display: flex;
+  justify-content: center;
+  
+}
+
+.overlayModal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+.modalLink{
+  color: white;
+  margin: 5px 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color .3s;
+  &:hover{
+    color: red;
+  }
+}

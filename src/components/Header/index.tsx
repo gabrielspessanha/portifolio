@@ -4,6 +4,8 @@ import {Container, Navbar, NavbarBrand}
 
 from 'reactstrap';
 
+import './styles.scss';
+
 export const socialNetworks =[
   { 
     name: "linkedin", 
@@ -15,7 +17,7 @@ export const socialNetworks =[
         bg-gradient-to-r  
         from-orange 
         to-pink p-1
-        transition-all
+        transition
         rounded-lg
         " 
       />, 
@@ -31,8 +33,7 @@ export const socialNetworks =[
         bg-gradient-to-r  
         from-orange to-pink 
         p-1
-        transition-all
-        duration-300
+        transition-colors
         rounded-lg
         " 
       />, 
@@ -48,8 +49,8 @@ export const socialNetworks =[
         bg-gradient-to-r 
         from-orange to-pink 
         p-1
-        transition-all
         rounded-lg
+        transition-colors
         " 
       />, 
     link: "https://www.instagram.com/bieldinn/" },
@@ -60,7 +61,7 @@ export function Header(){
     return( 
       <>
         <Navbar bg="transparent" data-bs-theme="dark"  expand="lg" className={`header`}>
-          <Container className='flex justify-between items-center'>
+          <Container className='flex justify-between items-center flex-wrap'>
             <NavbarBrand>
               <h3 className='mr-3 inline text-3xl '>Olá</h3><span className="text-gradient">Bem vindo!</span>
             </NavbarBrand>

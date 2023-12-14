@@ -17,37 +17,30 @@
         
     }
 }
+.technologiesContent{
+    max-width: 800px;
+    margin: 0 auto;
 
-#html{
-    svg{
-        color: #E44D26;
-    }
-}
-#css{
-    svg{
-        color: #1572b6;
-    }
-}
-#js{
-    svg{
-        color: #f0db4f;
-    }
-}
+    .technology-card{
+        font-size: 1.5rem;
+        width: 12rem;
+        height: 6rem;
 
-#react{
-    svg{
-        color: #61dafb;
-    }
-}
-
-@media(max-width: 550px){
-    .technologies-grid{
-        flex-direction: column;
+        display: flex;
         align-items: center;
+        justify-content: center;
+        font-weight: bold;
 
-        .technology-card{
-            width: 100%;
-            font-size: 1.2rem;
+        p{
+            margin: 0;
         }
     }
+
+}
+
+@media(max-width: 482px){
+        .technology-card{
+            flex-direction: column;
+            width: 8rem;
+        }
 }

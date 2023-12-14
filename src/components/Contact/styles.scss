@@ -1,6 +1,5 @@
-@import '../../styles/variables.scss';
+
 #information{
-    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +12,7 @@
         align-items: center;
         padding: .3rem 2rem;
         border-radius: 20px;
-        background: $gradient;
+        background: var(--gradient);
         gap: 2rem;
         margin-bottom: 10px;
         transition: .2s;

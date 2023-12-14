@@ -1,7 +1,6 @@
 
 
 .cardLayout{
-  transition: .3s;
   background-color: #e10d0d;
   height: 30rem;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.771);
@@ -10,9 +9,10 @@
     rgba(245, 100, 27, 0.335),
     rgba(255, 24, 182, 0.261)
   );
+  transition: transform .3s;
 
   &:hover{
-    transform: scale(1.02);
+    transform: scale(0.98);
   }
 }
 
@@ -22,9 +22,10 @@
   top: 1rem;
   right: 1rem;
   cursor: pointer;
+
   transition: transform .3s;
   &:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
   }
 }
 .imgCard{
@@ -45,8 +46,8 @@
 .contentModal{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-top: 3rem;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .modal{
@@ -58,7 +59,6 @@
   margin: 0 auto;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.771);
-  outline: none;
   border-radius: 2rem;
   box-shadow: 8px 6px 4px rgba(0, 0, 0, 0.229);
   padding: 0 24px;
@@ -82,7 +82,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.219);
 }
 .modalLink{
   color: white;

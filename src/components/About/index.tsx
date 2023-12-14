@@ -3,18 +3,19 @@ import './styles.scss'
 export function About(){
 
     return(
-        <div className="container containerAbout" id="about">
+        <div className=" containerAbout" id="about">
             <div className='img-card'>
                 <img src="/img/profile.jpg" alt="Gabriel pessanha" /> 
             </div>
             <div className='about-text'>
-                <h4 className="title-about">DESENVOLVEDOR <span>FRONT-END</span></h4>
+                <p className="title-about">DESENVOLVEDOR <span>FRONT-END</span></p>
                 <hr />
-                <p className="title-about">SOBRE</p>
+                <h3 className="text-gradient">SOBRE</h3>
 
-                <p>Olá! Me chamo Gabriel e tenho 20 anos. Meu objetivo profissional atualmente é conseguir um estágio na área de desenvolvimento de software. Atualmente, faço Análise e Desenvolvimento de Sistemas, com conclusão prevista para 01/2025. Também estou fazendo cursos profissionalizantes, como o Full-Stack da Onebitcode e o full-stack-python da EBAC.</p>
+                <p>Olá! Me chamo Gabriel e tenho 20 anos. Meu objetivo profissional atualmente é conseguir um estágio na área de desenvolvimento de software. Atualmente faço Análise e Desenvolvimento de Sistemas, e recentemente terminei o curso <span className='text-[#f64147]'>Full-Stack Javascript da Onebitcode</span></p>
 
-                <p>Possuo conhecimentos tecnologias como: Javascript, Typescript, React, SQL, Node.JS HTML5, CSS3, Next.js, Bootstrap, Sass, Styled Components. Atualmente, estou estudando React e Typescript.</p>
+                <p>Atualmente, tenho experiência em tecnologias como: JavaScript, TypeScript, React, SQL, Node.js, HTML5, CSS3, Next.js, Bootstrap, Sass e Styled Components.</p>
+
             </div>
         </div>
     )

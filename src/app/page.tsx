@@ -1,16 +1,17 @@
-'use client'
-import { About } from "@/components/About";
 import { Container } from "reactstrap";
 import { Main } from '@/components/Main'
 import { Technologies } from "@/components/Technologies";
-import { Portfolio } from "@/components/Portfolio";
+import { Projects } from "@/components/Projects";
+import { Footer } from "@/components/Footer";
+import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
       <Container className="h-screen">
         <Main />
-        <Portfolio />
+        <Projects />
         <Technologies />
+        <Footer />
       </Container>
   )
 }

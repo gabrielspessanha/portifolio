@@ -6,7 +6,7 @@ import './styles.scss';
 
 export function Contact(){
     return(
-       <section className="container" id="information">
+       <section id="information">
             <h2>CONTATO</h2>
             <hr />
 

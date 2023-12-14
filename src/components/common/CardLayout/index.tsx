@@ -1,10 +1,13 @@
 'use client'
-import React, { useState } from 'react'
+import React, { ReactElement, useEffect, useState } from 'react'
 import { Card, CardBody, CardText, CardTitle } from 'reactstrap'
 import ReactModal from 'react-modal';
 import Modal from 'react-modal'
 import { IoMdClose } from "react-icons/io";
 
+import styles from './styles.module.scss'
+import Link from 'next/link';
+import Image from 'next/image';
 
 export interface CardProps {
   url: string
@@ -12,15 +15,13 @@ export interface CardProps {
   description: string
   urlGitHub: string
   urlDeploy: string
-  tecnologies: any[]
+  tecnologies: ReactElement[]
 }
-
-import styles from './styles.module.scss'
-import Link from 'next/link';
-import Image from 'next/image';
 
 const CardLayout = (props: CardProps) => {
   const [modalOpen, setModalIsOpen] = useState(false);
+  const description = props.description.split(' ');
+  const croppedDescription = description.slice(0, 13).join(' ')
 
   const handleOpenModal = ()=>{
     setModalIsOpen(true)
@@ -28,8 +29,10 @@ const CardLayout = (props: CardProps) => {
   const handleCloseModal = ()=>{
     setModalIsOpen(false)
   }
-  const description = props.description.split(' ');
-  const croppedDescription = description.slice(0, 13).join(' ')
+  
+  useEffect(()=>{
+    ReactModal.setAppElement("#main")
+  },[])
 
   return (
     <Card
@@ -38,6 +41,7 @@ const CardLayout = (props: CardProps) => {
         width: '18rem'
       }}
       className={styles.cardLayout}
+      id='main'
     >
       <Image
         alt={props.title}
@@ -67,8 +71,8 @@ const CardLayout = (props: CardProps) => {
 
           <img className={styles.imgModal} alt="Sample"src={props.url} />
           <div className={styles.contentModal}>
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
+            <h3 className='text-4xl'>{props.title}</h3>
+            <p className='px-4'>{props.description}</p>
             <div className='flex gap-4 justify-center'>
               <Link href={props.urlGitHub} target='__blank'>
                 <button className='bg-light text-white bg-gradient-to-r from-violet-900 to-cyan-950 border-none py-2 ease-out duration-300 rounded-md hover:scale-110' style={{ border: 'none', width: '10rem'}}>Github</button>

@@ -5,13 +5,24 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import CardLayout from '../CardLayout';
 import { Infocards } from '@/components/Portfolio';
 import { ReactElement } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
+
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
+import { EffectCoverflow,Pagination,Navigation } from 'swiper/modules';
+import styles from './styles.module.scss';
 interface InforCardsProps {
   title: string
   description: string
   technologies: ReactElement[]
   linkGit: string
   linkDeploy: string
+  urlImg: string
 }
 
 const SlideComponent = () => {
@@ -23,49 +34,54 @@ const SlideComponent = () => {
   } else if (cards){
     slideCount = cards.length
   }
+
   return (
-    <div className='d-flex flex-column align-items-center py-4'>
-      <Splide options={{
-        type: "loop",
-        perPage: slideCount,
-        perMove: 1,
-        width: slideCount * 300,
-        pagination: false,
-        arrows: cards.length > 4 ? true : false,
-        drag: cards.length > 4 ? true : false,
-        breakpoints: {
-          1200: {
-            perPage: slideCount >= 2 ? 2 : 1,
-            width: slideCount >= 2 ? 700 : 300,
-            arrows: cards.length > 2 ? true : false,
-            drag: cards.length > 2 ? true : false,
-          },
-          630: {
-            perPage: 1,
-            width: 300,
-            arrows: cards.length > 1 ? true : false,
-            drag: cards.length > 1 ? true : false,
-          },
-          300: {
-            width: 250
+    <div className=''>
+      <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={'auto'}
+        coverflowEffect={
+          {
+            rotate:0,
+            stretch: 0,
+            depth: 100,
+            modifier:2.5
           }
         }
-      }}>
+        pagination={{el:'',clickable:true}}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className={styles.swiper}
+      >
         {cards.map((card)=>(
-          <SplideSlide key={card.title}>
+          <SwiperSlide className={styles.swiperSlide}>
             <CardLayout 
-                    url='/img/falcon.png' 
+                    url={card.urlImg}
                     title={card.title}
                     description={card.description}
                     urlDeploy={card.linkDeploy}
                     urlGitHub={card.linkGit}
                     tecnologies={card.technologies}
                 />
-          </SplideSlide>
+          </SwiperSlide>
         ))}
-          
+          <div className="slider-controler">
+            <div className='swiper-button-prev slider-arrow'>
+              <FaArrowLeft />
+            </div>
 
-      </Splide>
+            <div className='swiper-button-next slider-arrow'>
+              <FaArrowRight />
+            </div>
+
+          </div>
+      </Swiper>
     </div>
   );
 };

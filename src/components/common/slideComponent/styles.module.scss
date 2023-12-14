@@ -1,0 +1,26 @@
+.swiper{
+  width: 600px;
+  z-index: 0;
+}
+
+.swiperSlide{
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  width: 300px;
+  z-index: 0;
+}
+
+@media(max-width: 768px){
+  .swiper{
+    width: 400px;
+    z-index: 0;
+  }
+}
+
+@media(max-width: 387px){
+  .swiper{
+    width: 300px;
+    z-index: 0;
+  }
+}

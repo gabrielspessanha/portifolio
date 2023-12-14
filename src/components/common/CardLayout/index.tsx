@@ -17,6 +17,7 @@ export interface CardProps {
 
 import styles from './styles.module.scss'
 import Link from 'next/link';
+import Image from 'next/image';
 
 const CardLayout = (props: CardProps) => {
   const [modalOpen, setModalIsOpen] = useState(false);
@@ -38,9 +39,12 @@ const CardLayout = (props: CardProps) => {
       }}
       className={styles.cardLayout}
     >
-      <img
-        alt="Sample"
+      <Image
+        alt={props.title}
         src={props.url}
+        width={400}
+        height={100}
+        className={styles.imgCard}
       />
       <CardBody>
         <CardTitle className='text-white font-black' tag="h5">
@@ -75,7 +79,7 @@ const CardLayout = (props: CardProps) => {
               </Link>
             </div>
 
-            <div>
+            <div className={styles.tecnologies}>
               {props.tecnologies}
             </div>
           </div>

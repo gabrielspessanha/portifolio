@@ -10,7 +10,7 @@ export default function Home() {
     <Main />
     <Projects />
     <Technologies /> 
-    <Footer />
+
   </Container>
  
   )

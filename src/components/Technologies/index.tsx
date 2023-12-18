@@ -24,21 +24,21 @@ export function Technologies(){
             <h2>TECNOLOGIAS</h2>
             <hr />
             <div>
-                <nav className="grid justify-center grid-cols-3 gap-4 mb-4 bg-[#111111b3] p-2 w-7/12 rounded-xl mx-auto drop-shadow-md	">
+                <nav className="navigation mb-4 bg-[#111111b3] py-2 px-3 w-7/12 rounded-xl mx-auto drop-shadow-md	">
                     <button 
-                        className={`py-2 rounded-xl text-center hover:text-white hover:scale-105 transition-all ${dashboard === TechFrontend ?'bg-gradient-to-r from-orange to-pink':'bg-transparent'}`}
+                        className={`rounded-xl text-center hover:text-white hover:scale-105 transition-all ${dashboard === TechFrontend ?'bg-gradient-to-r from-orange to-pink':'bg-transparent'}`}
                         onClick={()=> handleTecnologie("front")}>
                             Front-end
                     </button>
 
                     <button 
-                        className={`py-2 rounded-xl text-center hover:text-white hover:scale-105 transition-all ${dashboard === TechBackend ?'bg-gradient-to-r from-orange to-pink':'bg-transparent'}`}
+                        className={`rounded-xl text-center hover:text-white hover:scale-105 transition-all ${dashboard === TechBackend ?'bg-gradient-to-r from-orange to-pink':'bg-transparent'}`}
                         onClick={()=> handleTecnologie("back")}>
                             Back-end
                     </button>
                     
                     <button 
-                        className={`py-2 rounded-xl text-center hover:text-white hover:scale-105 transition-all ${dashboard === TechOthers ?'bg-gradient-to-r from-orange to-pink':'bg-transparent'}`}
+                        className={`rounded-xl text-center hover:text-white hover:scale-105 transition-all ${dashboard === TechOthers ?'bg-gradient-to-r from-orange to-pink':'bg-transparent'}`}
                         onClick={()=> handleTecnologie("others")}>
                             Outros
                     </button>

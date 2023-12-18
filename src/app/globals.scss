@@ -17,12 +17,10 @@
   --text-color: #FFF;
   --text-color-secondary: #a6a6a6;
 
-  --body-bg-color: #282530;
+  --body-bg-color: #212024;
   --bg-color: #111111b3;
   --bg-color-secondary: #1d1d1d;
   --gradient: linear-gradient(90deg, rgba(250,82,82,1) 0%, rgba(221,36,118,1)100% );
-
-  --random-number: calc((Math.random() * 20) + 1);
 }
 
 .backgroundBody{
@@ -34,6 +32,10 @@
     color: inherit;
     color: var(--text-color);
   }
+}
+codeflixBg{
+  background: black;
+  color: var(--text-color);
 }
 
 

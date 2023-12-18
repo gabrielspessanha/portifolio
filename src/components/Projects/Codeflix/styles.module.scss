@@ -1,0 +1,38 @@
+
+.container{
+  display: flex;
+  margin-bottom: 4rem;
+  gap: 1rem;
+}
+
+.imgBackground{
+  width: 50%;
+}
+.textContent{
+  padding: 1rem;
+}
+
+@media(max-width: 1200px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgBackground{
+    width: 600px;
+  }
+}
+
+@media(max-width: 585px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: .8rem;
+  }
+
+  .imgBackground{
+    width: 400px;
+  }
+}

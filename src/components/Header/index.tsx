@@ -1,10 +1,11 @@
-import {FaLinkedinIn, FaGithub, FaInstagram} from 'react-icons/fa'
+
+import {FaLinkedinIn, FaGithub, FaHome } from 'react-icons/fa'
 import Link from 'next/link';
 import {Container, Navbar, NavbarBrand} 
 
 from 'reactstrap';
 
-import './styles.scss';
+import styles from './styles.module.scss';
 
 export const socialNetworks =[
   { 
@@ -39,21 +40,6 @@ export const socialNetworks =[
       />, 
     link: "https://github.com/gabrielspessanha"
   },
-  { 
-    name: "instagram",  
-    icon: <FaInstagram  size={35} 
-      className="
-        text-white 
-        hover:text-instagram 
-        hover:bg-none
-        bg-gradient-to-r 
-        from-orange to-pink 
-        p-1
-        rounded-lg
-        transition-colors
-        " 
-      />, 
-    link: "https://www.instagram.com/bieldinn/" },
 ]
 
 export function Header(){
@@ -61,16 +47,30 @@ export function Header(){
     return( 
       <>
         <Navbar bg="transparent" data-bs-theme="dark"  expand="lg" className={`header`}>
-          <Container className='flex justify-between items-center flex-wrap'>
+          <Container className={`flex ${styles.headerContent}`}>
             <NavbarBrand>
               <h3 className='mr-3 inline text-3xl '>Olá</h3><span className="text-gradient">Bem vindo!</span>
             </NavbarBrand>
-            <div className='flex gap-3 content-center'>
+            <div className='flex gap-3 '>
               {socialNetworks.map((social)=>(
-                <Link key={social.name} className='flex ' href={social.link} target='__blank'>
+                <Link key={social.name} className='flex' href={social.link} target='__blank'>
                   {social.icon}
                 </Link>
               ))}
+              <Link href={'/'}>
+                  <FaHome 
+                  size={35} 
+                  className="
+                    text-white 
+                    hover:bg-none 
+                    hover:text-github
+                    bg-gradient-to-r  
+                    from-orange to-pink 
+                    p-1
+                    transition-colors
+                    rounded-lg"
+                  />
+              </Link>
             </div>
           </Container>
         </Navbar>

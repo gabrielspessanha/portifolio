@@ -27,7 +27,7 @@ const SlideComponent = () => {
   const cards: InforCardsProps[] = Infocards
 
   return (
-    <div className=''>
+    <div>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}

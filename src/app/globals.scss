@@ -21,6 +21,8 @@
   --bg-color: #111111b3;
   --bg-color-secondary: #1d1d1d;
   --gradient: linear-gradient(90deg, rgba(250,82,82,1) 0%, rgba(221,36,118,1)100% );
+
+  --random-number: calc((Math.random() * 20) + 1);
 }
 
 .backgroundBody{

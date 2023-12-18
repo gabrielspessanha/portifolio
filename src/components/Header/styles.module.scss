@@ -1,0 +1,11 @@
+.headerContent{
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media(max-width: 435px){
+  .headerContent{
+    justify-content: center;
+  }
+}

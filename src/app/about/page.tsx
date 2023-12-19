@@ -1,10 +1,12 @@
 import { About } from "@/components/About";
+import Contact from "@/components/Contact";
 import { Container } from "reactstrap";
 
 export default function AboutPage() {
   return (
-    <Container className="h-screen">
+    <Container>
       <About />
+      <Contact />
     </Container>
   )
 }

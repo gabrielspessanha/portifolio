@@ -5,7 +5,8 @@ import { Header } from '@/components/Header';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.scss'
-import { Footer } from '@/components/Footer';
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +28,6 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
         />
         <link rel="icon" href="/icon.png" type="image/png" />
-
       </head>
       <body  className={`${inter.className} backgroundBody`}>
         <Header />

@@ -5,8 +5,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     width: 100%;
-    min-height: 80vh;
-    margin: 2rem 0;
     
 
     &>*{
@@ -44,9 +42,12 @@
         
 
         button{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
             padding: .3rem 2rem;
             border-radius: 20px;
-            max-width: 12rem;
+            max-width: 25rem;
             background: var(--gradient);
             color: #fff;
             border: none;
@@ -66,6 +67,7 @@
 
     .containerAbout{
         grid-template-columns: 1fr;
+        padding-top: 25rem;
 
         .title-about{
             font-size: 1.7rem;
@@ -83,7 +85,6 @@
 @media(max-width: 400px){
 
     .containerAbout{
-        grid-template-columns: 1fr;
 
         .title-about{
             font-size: 1.4rem;

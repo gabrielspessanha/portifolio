@@ -6,12 +6,13 @@ import { Container } from "reactstrap";
 
 export default function Home() {
   return (
+    <>
   <Container className="h-screen">   
     <Main />
     <Projects />
-    <Technologies /> 
-
+    <Technologies />
+    <Footer /> 
   </Container>
- 
+  </>
   )
 }

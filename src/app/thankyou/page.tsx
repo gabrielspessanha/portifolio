@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Footer } from '@/components/common/Footer';
 
-export default function Thankyou(name: string){
+export default function Thankyou(){
   const [visible, setVisible] = useState(true);
 
   const onDismiss = () => setVisible(false);

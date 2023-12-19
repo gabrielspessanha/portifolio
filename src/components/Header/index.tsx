@@ -45,7 +45,7 @@ export const socialNetworks =[
 export function Header(){
   
     return( 
-      <div className={`absolute z-0 w-full`}>
+      <div className={`absolute z-20 w-full`}>
         <Navbar bg="transparent" data-bs-theme="dark"  expand="lg" className={`header absolute`}>
           <Container className={`flex ${styles.headerContent}`}>
             <NavbarBrand>

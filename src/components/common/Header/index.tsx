@@ -1,4 +1,4 @@
-
+'use client'
 import {FaLinkedinIn, FaGithub, FaHome } from 'react-icons/fa'
 import Link from 'next/link';
 import {Container, Navbar, NavbarBrand} 
@@ -6,6 +6,7 @@ import {Container, Navbar, NavbarBrand}
 from 'reactstrap';
 
 import styles from './styles.module.scss';
+import { usePathname } from 'next/navigation';
 
 export const socialNetworks =[
   { 
@@ -43,24 +44,27 @@ export const socialNetworks =[
 ]
 
 export function Header(){
+    const pathname = usePathname()
   
     return( 
       <div className={`absolute z-20 w-full`}>
         <Navbar bg="transparent" data-bs-theme="dark"  expand="lg" className={`header absolute`}>
           <Container className={`flex ${styles.headerContent}`}>
             <NavbarBrand>
-              <h3 className='mr-3 inline text-3xl '>Olá</h3><span className="text-gradient">Bem vindo!</span>
+              <h3 className='mr-3 inline text-3xl font-bold'>Olá!</h3><span className="text-gradient">Bem vindo!</span>
             </NavbarBrand>
             <div className='flex gap-3 '>
               {socialNetworks.map((social)=>(
-                <Link key={social.name} className='flex' href={social.link} target='__blank'>
+                <Link key={social.name} title={social.name} className='flex' href={social.link} target='__blank'>
                   {social.icon}
                 </Link>
               ))}
               <Link href={'/'}>
                   <FaHome 
-                  size={35} 
-                  className="
+                  size={35}
+                  title={"Home"}
+                  className={`
+                    ${pathname === '/'?'hidden': null}
                     text-white 
                     hover:bg-none 
                     hover:text-github
@@ -68,7 +72,7 @@ export function Header(){
                     from-orange to-pink 
                     p-1
                     transition-colors
-                    rounded-lg"
+                    rounded-lg`}
                   />
               </Link>
             </div>

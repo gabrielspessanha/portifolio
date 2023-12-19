@@ -5,6 +5,7 @@ import { Alert, Container } from 'reactstrap';
 import styles from './styles.module.scss'
 import Image from 'next/image';
 import Link from 'next/link';
+import { Footer } from '@/components/common/Footer';
 
 export default function Thankyou(name: string){
   const [visible, setVisible] = useState(true);
@@ -19,6 +20,7 @@ export default function Thankyou(name: string){
   },[])
 
   return (
+    <>
     <Container className='h-screen flex flex-col gap-2 justify-center items-center'>
       <div className='fixed top-10 z-20'>
         <Alert style={{ background: '#83E509', border: 'none'}} isOpen={visible} toggle={onDismiss}>
@@ -31,7 +33,8 @@ export default function Thankyou(name: string){
       <Link href="/about">
         <button className={` ${styles.button}`}>Voltar</button>
       </Link>
-
     </Container>
+    <Footer />
+    </>
   )
 }

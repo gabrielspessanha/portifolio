@@ -56,6 +56,18 @@ button{
   font-weight: bold;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a171742;
+}
 
 @media(max-width: 1080px){
   html{

@@ -1,9 +1,11 @@
 
 import Link from 'next/link'
 import styles from './styles.module.scss'
+import { Footer } from '@/components/common/Footer'
 
 export default function Codeflix(){
   return (
+    <>
     <div className={styles.container}>
       <div className={styles.imgContent}>
         <img className={styles.backgroundImg} src="/img/backgroundCodeflix.png" alt="backgroundCodeflix" />
@@ -44,5 +46,6 @@ export default function Codeflix(){
         </video>
         </div>
     </div>
+  </>
   )
 }

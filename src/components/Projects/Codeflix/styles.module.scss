@@ -6,11 +6,16 @@
 }
 
 .imgBackground{
-  width: 60%;
   object-fit: contain;
 }
+
 .textContent{
   padding: 1rem;
+}
+
+.imgDescription{
+  margin: 0 auto;
+  width: 200px;
 }
 
 @media(max-width: 1200px){

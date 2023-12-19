@@ -20,7 +20,7 @@
     width: 12rem;
     height: 6rem;
     font-weight: bold;
-    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.644);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.644);
 
     display: flex;
     align-items: center;
@@ -39,8 +39,9 @@
     }
 }
 
-@media(max-width:588px ){
+@media(max-width: 589px){
     .navigation{
+        flex-direction: column;
         width: 300px;
         gap: .2rem;
         
@@ -51,18 +52,16 @@
 
     .technology-card{
         font-size: 1.1rem;
-    
+        flex-direction: column;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: .2rem;
-        
         transition: transform .4s;
     
         p{
             margin: 0;
         }
-        
         
         &:hover{
             transform: scale(1.2);

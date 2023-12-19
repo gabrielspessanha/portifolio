@@ -1,4 +1,4 @@
-import { Footer } from "@/components/Footer";
+import { Footer } from "@/components/common/Footer";
 import { Main } from "@/components/Main";
 import { Projects } from "@/components/Projects";
 import { Technologies } from "@/components/Technologies";

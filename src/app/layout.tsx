@@ -1,14 +1,14 @@
 
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { Header } from '@/components/Header';
+import { Montserrat } from 'next/font/google'
+import { Header } from '@/components/common/Header';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.scss'
 
 
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Gabriel Pessanha',
@@ -29,7 +29,7 @@ export default function RootLayout({
         />
         <link rel="icon" href="/icon.png" type="image/png" />
       </head>
-      <body  className={`${inter.className} backgroundBody`}>
+      <body className={`${montserrat.className} backgroundBody`}>
         <Header />
         {children}
       </body>

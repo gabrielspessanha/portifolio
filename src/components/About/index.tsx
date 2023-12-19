@@ -1,3 +1,4 @@
+import { Footer } from '../common/Footer';
 import './styles.scss'
 import { HiDownload } from "react-icons/hi";
 
@@ -22,8 +23,7 @@ export function About(){
                     <button className='bg-light text-white bg-gradient-to-r from-orange to-pink border-none px-5 py-2 hover:scale-110 ease-out duration-300 rounded-md' style={{ border: 'none'}}>Baixar curriculo <HiDownload size={20} />
                 </button>
                 </a>
-            </div>
-           
+            </div>     
         </div>
     )
 }

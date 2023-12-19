@@ -55,3 +55,36 @@
     }
   }
 }
+
+@media(max-width: 770px){
+  .container{
+    padding-top: 20rem;
+  }
+}
+
+@media(max-width: 400px){
+  .container{
+    padding-top: 10rem;
+  }
+
+  .form{
+    margin: 2rem auto;
+    padding: 10px 20px;
+    
+    input{
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    textarea{
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  
+    button{
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+  
+    }
+  }
+}

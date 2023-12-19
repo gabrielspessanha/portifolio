@@ -2,6 +2,7 @@
 .containerAbout{
     display: grid;
     place-content: center;
+    margin-bottom: 2rem;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     width: 100%;
@@ -67,8 +68,7 @@
 
     .containerAbout{
         grid-template-columns: 1fr;
-        padding-top: 25rem;
-
+        padding-top: 20rem;
         .title-about{
             font-size: 1.7rem;
         }
@@ -85,6 +85,7 @@
 @media(max-width: 400px){
 
     .containerAbout{
+        padding-top: 10rem;
 
         .title-about{
             font-size: 1.4rem;

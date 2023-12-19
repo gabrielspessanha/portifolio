@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 const Contact = () => {
   return (
-    <section className={`h-screen `}>
+    <section className={styles.container}>
       <h2>Contato</h2>
       <hr />
 

@@ -8,7 +8,7 @@ import{
 
 import { FaBootstrap, FaSass, FaGithub, FaGitAlt } from "react-icons/fa";
 import { TbBrandNextjs, TbFileTypeSql} from "react-icons/tb";
-import { SiTypescript, SiTailwindcss} from "react-icons/si";
+import { SiTypescript, SiTailwindcss, SiStyledcomponents, SiVite } from "react-icons/si";
 
 const tech = {
   react: <DiReact color='#61dafb' size={50} key={1} />,
@@ -17,6 +17,9 @@ const tech = {
   html: <DiHtml5 color='#E44D26' size={50}  key={4} />,
   bootstrap: <FaBootstrap color='rgb(137, 19, 252)' size={50}/>,
   sass: <FaSass color='rgb(237, 70, 126)' size={50}/>,
+  typescript: <SiTypescript color='#3178c6' size={50}/>,
+  styledComponents: <SiStyledcomponents color='white' size={60}/>,
+  vite: <SiVite color='#ffff00' size={50}/>,
 }
 
 export const TechFrontend = [
@@ -64,5 +67,14 @@ export const Infocards = [
       linkDeploy: "https://main--astronews-site.netlify.app/html/humanspaceflight",
       urlImg: "/img/falcon.png"
   },
+  {
+    id: 3,
+    title: "ggmoney", 
+    description: "Este é um projeto focado em controle financeiro pessoal, feito para simplificar o acompanhamento de entradas e saidas. Usando uma interface amigável os usuários podem facilmente cadastrar suas transações, proporcionando uma visão clara e organizada de suas finanças.\n\n O site foi desenvolvido usando React com vite para desenvolvimento rápido e eficiente, Typescript para proporcionar tipagem estática ao Javascript, styled-components para estilização, React-modal para modais interativos, Polished para manipulação de cores e useContext para gerenciamento eficiente de estado", 
+    technologies: [tech.react,tech.js,tech.typescript,tech.styledComponents ,tech.html, tech.css], 
+    linkGit: "https://github.com/gabrielspessanha/ggmoney", 
+    linkDeploy: "https://ggmoney.netlify.app/",
+    urlImg: "/img/ggmoney.png"
+},
   
 ]

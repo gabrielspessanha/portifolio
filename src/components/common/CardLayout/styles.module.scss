@@ -37,6 +37,7 @@
 .imgModal{
   position: absolute;
   width: 100%;
+  filter: blur(1px);
   height: 30rem;
   object-fit: cover;
   z-index: -1;

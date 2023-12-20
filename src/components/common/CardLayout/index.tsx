@@ -38,7 +38,7 @@ const CardLayout = (props: CardProps) => {
     <Card
       color='dark'
       style={{
-        width: '18rem'
+        width: '20rem'
       }}
       className={styles.cardLayout}
       id='main'
@@ -46,7 +46,7 @@ const CardLayout = (props: CardProps) => {
       <Image
         alt={props.title}
         src={props.url}
-        width={400}
+        width={500}
         height={100}
         className={styles.imgCard}
       />
@@ -71,7 +71,7 @@ const CardLayout = (props: CardProps) => {
 
           <img className={styles.imgModal} alt="Sample"src={props.url} />
           <div className={styles.contentModal}>
-            <h3 className='text-4xl'>{props.title}</h3>
+            <h3 className='text-4xl font-bold'>{props.title}</h3>
             <p className='px-4'>{props.description}</p>
             <div className='flex gap-4 justify-center'>
               <Link href={props.urlGitHub} target='__blank'>

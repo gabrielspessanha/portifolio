@@ -37,6 +37,7 @@ export const TechFrontend = [
   { id: "tailwind", name: "Tailwind", icon: <SiTailwindcss color='rgb(32, 186, 189)' size={50}/>},
   { id: "sass", name: "Sass", icon: <FaSass color='rgb(237, 70, 126)' size={50}/>},
   { id: "bootstrap", name: "Bootstrap", icon: <FaBootstrap color='rgb(137, 19, 252)' size={50}/>},
+  { id: "styledComponents", name: "Styled-components", icon: <SiStyledcomponents color='white' size={60} title={'StyledComponents'} />},
 ];
 
 export const TechBackend= [
@@ -49,6 +50,7 @@ export const TechBackend= [
 export const TechOthers= [
   { id: "git", name: "Git", icon: <FaGitAlt color='rgb(240, 85, 57)' size={50}/>},
   { id: "github", name: "Github", icon: <FaGithub color='#2c3160' size={50}/>},
+  { id: "vite", name: "Vite", icon: <SiVite color='#ffff00' size={50} title={'Vite'} />,},
 ];
 
 

@@ -74,12 +74,12 @@ const CardLayout = (props: CardProps) => {
             <h3 className='text-4xl font-bold'>{props.title}</h3>
             <p className='px-4'>{props.description}</p>
             <div className='flex gap-4 justify-center'>
-              <Link href={props.urlGitHub} target='__blank'>
-                <button className='bg-light text-white bg-gradient-to-r from-violet-900 to-cyan-950 border-none py-2 ease-out duration-300 rounded-md hover:scale-110' style={{ border: 'none', width: '10rem'}}>Github</button>
+              <Link className={styles.buttonLink} href={props.urlGitHub} target='__blank'>
+                <button className='bg-light text-white bg-gradient-to-r from-violet-900 to-cyan-950 border-none py-2 ease-out duration-300 rounded-md hover:scale-110' style={{ border: 'none'}}>Github</button>
               </Link>
 
-              <Link href={props.urlDeploy} target='__blank'>
-                <button className='bg-light text-white bg-gradient-to-r from-amber-400 to-amber-500 border-none py-2 ease-out duration-300 rounded-md hover:scale-110' style={{ border: 'none', width: '10rem'}}>Ver Projeto</button>
+              <Link className={styles.buttonLink} href={props.urlDeploy} target='__blank'>
+                <button className='bg-light text-white bg-gradient-to-r from-amber-400 to-amber-500 border-none py-2 ease-out duration-300 rounded-md hover:scale-110' style={{ border: 'none'}}>Ver Projeto</button>
               </Link>
             </div>
 

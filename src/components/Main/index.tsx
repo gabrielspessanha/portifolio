@@ -4,6 +4,8 @@ import React from 'react'
 
 import styles from './styles.module.scss';
 import { BackToTopButton } from '../common/backToTopButton';
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+
 
 const Main = () => {
   return (
@@ -14,6 +16,7 @@ const Main = () => {
         <button className='bg-light text-white font-semibold bg-gradient-to-r from-orange to-pink border-none px-5 py-2 hover:scale-110 ease-out duration-300 rounded-md' style={{ border: 'none'}}>Saiba mais</button>
       </Link>
       <BackToTopButton />
+      <MdKeyboardDoubleArrowDown className="animate-ping mt-20" size={50} />
     </main>
   )
 }

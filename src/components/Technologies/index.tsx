@@ -21,7 +21,7 @@ export function Technologies(){
 
     return(
         <section className='technologies-container h-5/6'>
-            <h2>TECNOLOGIAS</h2>
+            <h2 className='font-black'>TECNOLOGIAS</h2>
             <hr />
             <div>
                 <nav className="navigation mb-4 bg-[#111111b3] py-2 px-3 w-7/12 rounded-xl mx-auto drop-shadow-md	">

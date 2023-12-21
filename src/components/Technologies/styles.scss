@@ -1,6 +1,10 @@
+.technologies-container{
+    margin: 7rem 0;
+}
+
 .technologiesContent{
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0rem auto;
 }
 .navigation{
     width: 500px;
@@ -37,6 +41,13 @@
     &:hover{
         transform: scale(1.2);
     }
+}
+
+@media(max-width: 767px){
+    .technologies-container{
+        margin-bottom: 10rem;
+    }
+    
 }
 
 @media(max-width: 589px){

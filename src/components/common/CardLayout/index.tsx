@@ -21,7 +21,7 @@ export interface CardProps {
 const CardLayout = (props: CardProps) => {
   const [modalOpen, setModalIsOpen] = useState(false);
   const description = props.description.split(' ');
-  const croppedDescription = description.slice(0, 13).join(' ')
+  const croppedDescription = description.slice(0, 11).join(' ')
 
   const handleOpenModal = ()=>{
     setModalIsOpen(true)
@@ -57,7 +57,7 @@ const CardLayout = (props: CardProps) => {
         <CardText className={`text-white ${styles.cardDescription}`}>
           {croppedDescription + '...'}
         </CardText>
-        <button className='bg-light text-white bg-gradient-to-r from-orange to-pink border-none py-2 ease-out duration-300 rounded-md hover:scale-110' style={{ border: 'none', width: '10rem'}} onClick={handleOpenModal}>Ver mais</button>
+        <button  className='bg-light text-white bg-gradient-to-r from-orange to-pink border-none py-2 ease-out duration-300 rounded-md hover:scale-110' style={{ border: 'none', width: '10rem'}} onClick={handleOpenModal}>Ver mais</button>
       </CardBody>
 
       <Modal 

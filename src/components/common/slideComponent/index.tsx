@@ -53,6 +53,7 @@ const SlideComponent = () => {
         {cards.map((card)=>
           <SwiperSlide key={card.id} className={styles.swiperSlide}>
             <CardLayout
+              id={card.id}
               url={card.urlImg}
               title={card.title}
               description={card.description}

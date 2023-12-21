@@ -15,16 +15,16 @@ const tech = {
   js: <DiJsBadge color='#f0db4f' size={50}  key={2} title={'Javascript'}  />,
   css: <DiCss3 color='#1572b6' size={50}  key={3}  title={'CSS3'} />,
   html: <DiHtml5 color='#E44D26' size={50}  key={4} title={'HTML5'}  />,
-  bootstrap: <FaBootstrap color='rgb(137, 19, 252)' size={50} title={'Bootstrap'} />,
-  sass: <FaSass color='rgb(237, 70, 126)' size={50} title={'Sass'} />,
-  typescript: <SiTypescript color='#3178c6' size={50} title={'Typescript'} />,
-  styledComponents: <SiStyledcomponents color='white' size={60} title={'StyledComponents'} />,
-  vite: <SiVite color='#ffff00' size={50} title={'Vite'} />,
-  node: <DiNodejs color='rgb(136, 194, 97)' size={50} title={'NodeJs'} />,
-  nextJs: <TbBrandNextjs  size={50} title={"Next.js"}  />,
-  sql: <TbFileTypeSql color='#ed740a' size={50} title={'SQL'}/>,
-  git:  <FaGitAlt color='rgb(240, 85, 57)' size={50} title={'Git'} />,
-  github: <FaGithub color='#2c3160' size={50} title={'Github'} />
+  bootstrap: <FaBootstrap color='rgb(137, 19, 252)' key={5} size={50} title={'Bootstrap'} />,
+  sass: <FaSass color='rgb(237, 70, 126)' size={50} key={6} title={'Sass'} />,
+  typescript: <SiTypescript color='#3178c6' size={50} key={7} title={'Typescript'} />,
+  styledComponents: <SiStyledcomponents color='white' key={8} size={60} title={'StyledComponents'} />,
+  vite: <SiVite color='#ffff00' size={50} key={9} title={'Vite'} />,
+  node: <DiNodejs color='rgb(136, 194, 97)' key={10} size={50} title={'NodeJs'} />,
+  nextJs: <TbBrandNextjs  size={50} key={11} title={"Next.js"}  />,
+  sql: <TbFileTypeSql color='#ed740a' key={12} size={50} title={'SQL'}/>,
+  git:  <FaGitAlt color='rgb(240, 85, 57)' key={13} size={50} title={'Git'} />,
+  github: <FaGithub color='#2c3160' key={14} size={50} title={'Github'} />
 }
 
 export const TechFrontend = [
@@ -50,7 +50,7 @@ export const TechBackend= [
 export const TechOthers= [
   { id: "git", name: "Git", icon: <FaGitAlt color='rgb(240, 85, 57)' size={50}/>},
   { id: "github", name: "Github", icon: <FaGithub color='#2c3160' size={50}/>},
-  { id: "vite", name: "Vite", icon: <SiVite color='#ffff00' size={50} title={'Vite'} />,},
+  { id: "vite", name: "Vite", icon: <SiVite color='#ffff00' size={50} title={'Vite'} />},
 ];
 
 
@@ -88,8 +88,8 @@ export const Infocards = [
     title: "Minha jornada", 
     description: "Este é um repositorio que representa minha jornada de aprendizagem, onde eu guardei todos os exercicios de cada tecnologia que aprendi durante meu aprendizado, onde guardei também projetos menores.", 
     technologies: [tech.react, tech.js, tech.typescript, tech.node,tech.nextJs, tech.sql,tech.git, tech.github,tech.html, tech.css, tech.sass, tech.vite, tech.bootstrap, tech.styledComponents ], 
-    linkGit: "https://github.com/gabrielspessanha/ggmoney", 
-    linkDeploy: "https://ggmoney.netlify.app/",
+    linkGit: "https://github.com/gabrielspessanha/my-learning-journey",
+    linkDeploy: "https://github.com/gabrielspessanha/my-learning-journey",
     urlImg: "/img/myLerningJourney.jpg"
   },
   {

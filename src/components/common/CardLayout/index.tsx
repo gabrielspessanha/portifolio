@@ -10,6 +10,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export interface CardProps {
+  id: number
   url: string
   title: string
   description: string
@@ -42,6 +43,7 @@ const CardLayout = (props: CardProps) => {
       }}
       className={styles.cardLayout}
       id='main'
+      key={props.title}
     >
       <Image
         alt={props.title}
@@ -78,7 +80,7 @@ const CardLayout = (props: CardProps) => {
                 <button className='bg-light text-white bg-gradient-to-r from-violet-900 to-cyan-950 border-none py-2 ease-out duration-300 rounded-md hover:scale-110' style={{ border: 'none'}}>Github</button>
               </Link>
 
-              <Link className={styles.buttonLink} href={props.urlDeploy} target='__blank'>
+              <Link className={props.id === 4? styles.buttonLinkDisable : styles.buttonLink} href={props.urlDeploy} target='__blank'>
                 <button className='bg-light text-white bg-gradient-to-r from-amber-400 to-amber-500 border-none py-2 ease-out duration-300 rounded-md hover:scale-110' style={{ border: 'none'}}>Ver Projeto</button>
               </Link>
             </div>

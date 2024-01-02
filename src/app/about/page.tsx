@@ -5,10 +5,13 @@ import { Container } from "reactstrap";
 
 export default function AboutPage() {
   return (
-    <Container>
+    <>
+    <Container className="flex flex-col gap-5">
       <About />
       <Contact />
-      <Footer />
+      
     </Container>
+    <Footer />
+    </>
   )
 }

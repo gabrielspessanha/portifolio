@@ -54,7 +54,6 @@ export const TechOthers= [
 ];
 
 
-
 export const Infocards = [
   {   
       id: 1,
@@ -99,7 +98,7 @@ export const Infocards = [
     technologies: [ tech.js,tech.html, tech.css ], 
     linkGit: "https://github.com/gabrielspessanha/marioJump", 
     linkDeploy: "https://mariojumprun.netlify.app/",
-    urlImg: "/gif/mariogif.gif"
+    urlImg: window.innerWidth < 400 ? '/img/CapaProjetoMarioJump.png':  "/gif/mariogif.gif"
   },
   {
     id: 6,
@@ -110,7 +109,4 @@ export const Infocards = [
     linkDeploy: "https://main--openhousepage.netlify.app/",
     urlImg: "/img/openHouse.png"
   },
-  
-
-  
 ]

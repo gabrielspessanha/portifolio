@@ -23,6 +23,7 @@ const CardLayout = (props: CardProps) => {
   const [modalOpen, setModalIsOpen] = useState(false);
   const description = props.description.split(' ');
   const croppedDescription = description.slice(0, 11).join(' ')
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleOpenModal = ()=>{
     setModalIsOpen(true)
@@ -34,6 +35,24 @@ const CardLayout = (props: CardProps) => {
   useEffect(()=>{
     ReactModal.setAppElement("#main")
   },[])
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsMobile(window.innerWidth < 600);
+
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 600);
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+
+  const imageUrl = isMobile ? '/img/CapaProjetoMarioJump.png':"/gif/mariogif.gif" ;
 
   return (
     <Card
@@ -47,7 +66,7 @@ const CardLayout = (props: CardProps) => {
     >
       <Image
         alt={props.title}
-        src={props.url}
+        src={props.id !== 5 ? props.url: imageUrl}
         width={500}
         height={100}
         className={styles.imgCard}

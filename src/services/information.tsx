@@ -9,6 +9,7 @@ import{
 import { FaBootstrap, FaSass, FaGithub, FaGitAlt } from "react-icons/fa";
 import { TbBrandNextjs, TbFileTypeSql} from "react-icons/tb";
 import { SiTypescript, SiTailwindcss, SiStyledcomponents, SiVite } from "react-icons/si";
+import { useEffect, useState } from 'react';
 
 const tech = {
   react: <DiReact color='#61dafb' size={50} key={1} title={'react'}  />,
@@ -26,6 +27,7 @@ const tech = {
   git:  <FaGitAlt color='rgb(240, 85, 57)' key={13} size={50} title={'Git'} />,
   github: <FaGithub color='#2c3160' key={14} size={50} title={'Github'} />
 }
+
 
 export const TechFrontend = [
   { id: "js", name: "JavaScript", icon: <DiJsBadge color='#f0db4f' size={50} /> },
@@ -98,7 +100,7 @@ export const Infocards = [
     technologies: [ tech.js,tech.html, tech.css ], 
     linkGit: "https://github.com/gabrielspessanha/marioJump", 
     linkDeploy: "https://mariojumprun.netlify.app/",
-    urlImg: window.innerWidth < 400 ? '/img/CapaProjetoMarioJump.png':  "/gif/mariogif.gif"
+    urlImg: '/gif/mariogif.gif'
   },
   {
     id: 6,
@@ -110,3 +112,4 @@ export const Infocards = [
     urlImg: "/img/openHouse.png"
   },
 ]
+

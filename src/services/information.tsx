@@ -9,7 +9,6 @@ import{
 import { FaBootstrap, FaSass, FaGithub, FaGitAlt } from "react-icons/fa";
 import { TbBrandNextjs, TbFileTypeSql} from "react-icons/tb";
 import { SiTypescript, SiTailwindcss, SiStyledcomponents, SiVite } from "react-icons/si";
-import { useEffect, useState } from 'react';
 
 const tech = {
   react: <DiReact color='#61dafb' size={50} key={1} title={'react'}  />,
